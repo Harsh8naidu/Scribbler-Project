@@ -4,10 +4,120 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>ScriBBler</title>
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header-container">
+
+        <div class="header">
+
+            <div class="logo-container">
+                <h2 id="logo">ScriBBler</h2>
+            </div>
+
+            <div id="subheading">
+                <h6>Explore, Imagine, Create</h6>
+            </div>
+
+            <div id="header-btn">
+                <button id="signup-nav-btn" class="signup-btn-primary">Sign Up</button>
+                <button id="signin-nav-btn" class="signin-btn-primary">Sign In</button>
+            </div>
+
+        </div>
+
+        <div id="signup-Modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Get Started</h2>
+                </div>
+                
+                <div id="greyline-modal"></div>
+                
+                <div class="modal-body">
+                <form>
+                <label class="custom-field three">
+                    <div><label for="name">Name</label></div>
+                    <input type="password" placeholder="Enter your name" required maxlength="45">
+            
+                    <div><label for="name">Username</label></div>
+                    <input type="password" placeholder="Enter your username" required maxlength="45">
+            
+                    <div><label for="name">Password</label></div>
+                    <input type="password" placeholder="Enter your password" required maxlength="45">
+            
+                    <div><label for="name">Confirm Password</label></div>
+                    <input type="password" placeholder="Re-enter your password" required maxlength="45">
+                </label>
+                <button class="signUp-btn">Sign Up</button>
+                </form>
+                </div>
+                <div class="modal-footer">
+                <h3>Modal Footer</h3>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="signin-Modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close-signIn">&times;</span>
+                <h2>Welcome Back!</h2>
+                </div>
+                
+                <div id="greyline-modal"></div>
+                
+                <div class="modal-body">
+                <form>
+                <label class="custom-field three">
+                    <div><label for="name">Username</label></div>
+                    <input type="password" placeholder="Enter your username" required maxlength="45">
+            
+                    <div><label for="name">Password</label></div>
+                    <input type="password" placeholder="Enter your password" required maxlength="45">
+                </label>
+                <button class="signUp-btn">Sign In</button>
+                </form>
+                <br>
+                <div id="signIn-footer">
+                    <span id="signin-footer">Not a member?</span>
+                    <span onclick="signInToSignUp('signup-Modal')" class="signin-to-signup">Sign Up</span>
+                </div>
+                </div>
+                <div class="modal-footer">
+                <h3>Modal Footer</h3>
+                </div>
+            </div>
+            
+        </div>
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
