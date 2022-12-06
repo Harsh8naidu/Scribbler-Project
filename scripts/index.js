@@ -34,12 +34,12 @@ var spanCloseSignIn = document.getElementsByClassName("close-signIn")[0];
 
 // When the user clicks the button, open the modal 
 btnSignIn.onclick = function() {
-    modalSignIn.style.display = "block";
+  modalSignIn.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 spanCloseSignIn.onclick = function() {
-    modalSignIn.style.display = "none";
+  modalSignIn.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -50,6 +50,14 @@ window.onclick = function(event) {
 }
 
 function signInToSignUp(arg) {
-    document.getElementById("signin-Modal").style.display = "none";
-    document.getElementById("signup-Modal").style.display = "block";
+  document.getElementById("signin-Modal").style.display = "none";
+  document.getElementById("signup-Modal").style.display = "block";
+}
+
+function createPostDisplay() {
+  document.getElementById("createpost-Modal").style.display = "block";
+}
+
+function closePostDisplay() {
+  document.getElementById("createpost-Modal").style.display = "none";
 }
