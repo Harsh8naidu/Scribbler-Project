@@ -44,7 +44,7 @@ body{
     padding: 0;
     border: 1px solid #888;
     width: 30%;
-    height: 450px;
+    height: 470px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -81,9 +81,10 @@ body{
   /* The Close Button */
   .close {
     color: #000000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    position: relative;
+    left: 360px;
+    bottom: 5px;
+    font-size: 30px;
   }
   
   .close:hover,
@@ -95,9 +96,9 @@ body{
 
   .close-signIn {
     color: #000000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    position: relative;
+    left: 360px;
+    font-size: 30px;
   }
   
   .close-signIn:hover,
@@ -113,10 +114,23 @@ body{
     color: #000000;
     font-family: 'Lato', sans-serif;
   }
+
+  #signup-title {
+    position: relative;
+    right: 230px;
+    top: 10px;
+  }
   
+  #signin-title{
+    position: relative;
+    right: 180px;
+    top: 10px;
+  }
+
   .modal-body {
     padding: 2px 16px;
     position: relative;
+    bottom: 15px;
     left: 60px;
     }
   
@@ -131,7 +145,7 @@ body{
     left: 15px;
     background-color: grey;
     width: 380px;
-    height: 2px;
+    height: 1px;
   }
   
   *, *::before, *::after {

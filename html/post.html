@@ -1,9 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/post.css">
     <title>post</title>
 </head>
 <body>
-    <p>Hi there this page is under construction.</p>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header-container">
+
+        <div class="header">
+
+            <div class="logo-container">
+                <h2 id="logo">ScriBBler</h2>
+            </div>
+
+            <div id="subheading">
+                <h6>Explore, Imagine, Create</h6>
+            </div>
+
+            <div id="header-btn">
+                <button id="signup-nav-btn" class="signup-btn-primary">Sign Up</button>
+                <button id="signin-nav-btn" class="signin-btn-primary">Sign In</button>
+            </div>
+
+        </div>
+
+        <div id="signup-Modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content-signup">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Get Started</h2>
+                </div>
+                
+                <div id="greyline-modal"></div>
+                
+                <div class="modal-body">
+                <form>
+                <label class="custom-field three">
+                    <div><label for="name">Name</label></div>
+                    <input type="text" placeholder="Enter your name" required maxlength="45">
+            
+                    <div><label for="name">Username</label></div>
+                    <input type="text" placeholder="Enter your username" required maxlength="45">
+            
+                    <div><label for="name">Password</label></div>
+                    <input type="password" placeholder="Enter your password" required maxlength="45">
+            
+                    <div><label for="name">Confirm Password</label></div>
+                    <input type="password" placeholder="Re-enter your password" required maxlength="45">
+                </label>
+                <button class="signUp-btn">Sign Up</button>
+                </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="signin-Modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content-signin">
+                <div class="modal-header">
+                <span class="close-signIn">&times;</span>
+                <h2>Welcome Back!</h2>
+                </div>
+                
+                <div id="greyline-modal"></div>
+                
+                <div class="modal-body">
+                <form>
+                <label class="custom-field three">
+                    <div><label for="name">Username</label></div>
+                    <input type="text" placeholder="Enter your username" required maxlength="45">
+            
+                    <div><label for="name">Password</label></div>
+                    <input type="password" placeholder="Enter your password" required maxlength="45">
+                </label>
+                <button class="signUp-btn">Sign In</button>
+                </form>
+                <br>
+                <div id="signIn-footer">
+                    <span id="signin-footer">Not a member?</span>
+                    <span onclick="signInToSignUp('signup-Modal')" class="signin-to-signup">Sign Up</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="title-container">
+        <h3>Everything you should know about ‘module’ & ‘require’ in Node.js</h3>
+    </div>
+
+    <div class="subheading-container">
+        <div id="author-name">
+            <p id="author-name-styling">Shrishti Gupta</p>
+            <button id="edit-btn-styling">Edit<i class="fas fa-edit"></i></button>
+        </div>
+    </div>
+
+    <div class="post-body">
+        <p id="post-content">Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz. Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+            containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
+            say that you’ve created a module named xyz.</p>
+    </div>
+
+    <button id="like-btn-styling"><i class="fa-solid fa-thumbs-up"></i>Liked</button>
+
+    <p id="like-counter">Be the first one to like this!</p>
+
+    <textarea id="comment-box" placeholder="Leave a comment..."></textarea>
+    <button id="comment-btn-styling">Comment</button>
+    
+    <div all-comments-container>
+        <h4 id="all-comments-heading">All Comments</h4>
+    </div>
+
+    <script src="../scripts/post.js"></script>
+    <script src="https://kit.fontawesome.com/befa429956.js" crossorigin="anonymous"></script>
 </body>
 </html>
