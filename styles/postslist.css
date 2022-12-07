@@ -1,32 +1,24 @@
 body{
-    position: relative;
-    
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-}
-
-.container {
-  background: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-size:100% 100%;
-  height: 660px;
-  margin-top: -20px;
+    background-color: #ffeedd;
 }
 
 #logo{
     font-family: 'Montez', cursive;
     color: blue;
     position: relative;
-    top: 10px;
-    margin-left: 10px;
+    top: 11px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #subheading{
     font-family: 'Ubuntu Mono', monospace;
     position: relative;
-    bottom: 15px;
     left: 12px;
+    top: 2px;
+    font-size: 11px;
+    font-weight: bold;
 }
   
 /* The Modal (background) */
@@ -317,8 +309,10 @@ body{
     background-color: blue;
     color: white;
     border: 1px solid black;
-    padding: 5px;
+    padding: 2px;
     width: 70px;
+    size: 20px;
+    font-size: 14px;
     margin-right: 8px;
   }
 
@@ -326,17 +320,19 @@ body{
     background-color: blue;
     color: white;
     border: 1px solid black;
-    padding: 5px;
+    padding: 2px;
     width: 70px;
+    font-size: 14px;
+    size: 20px;
   }
 
   #header-btn{
     display: flex;
     justify-content: flex-end;
     position:relative;
-    right: 16px;
+    right: 10px;
     position: relative;
-    bottom: 80px;
+    bottom: 59px;
   }
 
   #signIn-footer{
@@ -351,105 +347,166 @@ body{
     cursor: pointer;
   }
 
-  #posts-btn{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #all-posts{
-    background-color: #f2bd0c;
-    margin-right: 15px;
-    border: 2px solid #918989;
-    padding: 5px;
-    width: 90px;
-  }
-
-  #create-post{
-    background-color: #f2bd0c;
-    border: 2px solid #918989;
-    padding: 5px;
-    width: 100px;
-  }
-
-  .modal-content-createpost{
+  /* 
+    POSTCARD
+  */
+  #username-display {
+    background-color: #fff;
     position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 90%;
-    height: 520px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+    right: 20px;
+}
+
+#postcard-color {
+    background-color: #E8E8E8;
+}
+
+#postcard-title {
+    color: #888D8D;
+}
+
+#delete-icon{
+  position: relative;
+  left: 400px;
+  top: 5px;
+  color: #818181;
+  cursor: pointer;
+}
+
+#ellipsis{
+  position: relative;
+  top: 140px;
+  left: 380px;
+  color: #818181;
+}
+
+.card-body {
+    position: relative;
+  bottom: 33px;
+  right: 15px;
+  width: 300px;
   }
 
-  .close-createpost {
-    color: #000000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+
+#username-text {
+    position: relative;
+  left: 20px;
+  top: 60px;
+  color: #70747E;
+}
+
+.container{
+  border: 1px solid gray;
+  border-radius: 15px; 
+  overflow: hidden;
+  width: 600px;
+  height: 170px;
+}
+
+.card-text{
+  font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
+  width: 420px;
+}
+
+.posts-wrapper {
+  position: relative;
+  right: 55px;
+  bottom: 40px;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 110%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-top: 30px;
+}
   
-  .close-createpost:hover,
-  .close-createpost:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.modal-content-delete{
+  position: relative;
+  top: 100px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 27%;
+  height: 125px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop-delete;
+  -webkit-animation-duration: 0.6s;
+  animation-name: animatetop-delete;
+  animation-duration: 0.6s;
+}
 
-  .createpost-btn {
-    position: relative;
-    top: 40px;
-    left: 520px;
-    background-color: green;
-    border: 1px solid #888;
-    padding: 5px;
-    width: 100px;
-    color: white;
-  }
+@-webkit-keyframes animatetop-delete {
+  from {top:-300px; opacity:0} 
+  to {top:100px; opacity:1}
+}
 
-  .modal-body-createpost {
-    padding: 2px 16px;
-    position: relative;
-    left: 5px;
-    bottom: 20px;
-    }
+@keyframes animatetop-delete {
+  from {top:-300px; opacity:0}
+  to {top:100px; opacity:1}
+}
 
-    #title-createpost {
-      position: relative;
-      top: 5px;
-      width: 1170px;
-    }
+.close-delete {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-    #content-createpost {
-      position: relative;
-      top: 25px;
-      background-color: #f2f2f2;
-      border: none;
-      border-radius: 5px;
-      width: 1170px;
-      height: 250px;
-      font-family:Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      padding-left: 10px;
-      padding-top: 10px;
-    }
+.close-delete:hover,
+.close-delete:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-    #contents-box {
-      position: relative;
-      top: 20px;
-    }
+.delete-yes-btn {
+  position: relative;
+  top: 20px;
+  right: 55px;
+  border: 1px solid gray;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  background-color: green;
+}
 
-    #greyline-createpost {
-      position: relative;
-    left: 15px;
-    background-color: grey;
-    width: 1190px;
-    height: 2px;
-    }
- 
+.delete-no-btn {
+  position: relative;
+  top: 20px;
+  left: 120px;
+  border: 1px solid gray;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  background-color: red;
+}
+
+#delete-ask {
+  position: relative;
+  top: 15px;
+  right: 45px;
+}
