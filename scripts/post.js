@@ -53,3 +53,12 @@ function signInToSignUp(arg) {
   document.getElementById("signin-Modal").style.display = "none";
   document.getElementById("signup-Modal").style.display = "block";
 }
+
+//Post details: title, content, comments
+//Edit, Like, Comment
+var receivePostTitle = localStorage.getItem("title");
+var receivePostContent = localStorage.getItem("content");
+var receivePostUsername = localStorage.getItem("username");
+document.getElementById('title-text').innerHTML = receivePostTitle;
+document.getElementById('post-content').innerHTML = receivePostContent;
+document.getElementById('author-name-styling').innerHTML = receivePostUsername;

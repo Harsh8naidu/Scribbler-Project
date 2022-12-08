@@ -374,8 +374,12 @@ body{
     background-color: #E8E8E8;
 }
 
-#postcard-title {
+.title-text-color {
     color: #888D8D;
+}
+
+.title-text-color:hover {
+  color: #888D8D;
 }
 
 #delete-icon{
@@ -401,7 +405,7 @@ body{
   }
 
 
-#username-text {
+.username-text {
     position: relative;
   left: 20px;
   top: 60px;

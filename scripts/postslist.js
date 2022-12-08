@@ -67,3 +67,17 @@ function deletePostYesBtn() {
 function deletePostNoBtn() {
   document.getElementById("delete-Modal").style.display = "none";
 }
+
+function getPostDetails(individualPostTitle, individualPostContent, individualPostUsername) {
+
+  var postTitle = document.getElementById(individualPostTitle).innerText;
+  var postContent = document.getElementById(individualPostContent).innerText;
+  var postUsername = document.getElementById(individualPostUsername).innerText;
+
+  localStorage.setItem("title", postTitle);
+  localStorage.setItem('content', postContent);
+  localStorage.setItem("username", postUsername);
+
+  window.location.href = "index.html";
+
+}

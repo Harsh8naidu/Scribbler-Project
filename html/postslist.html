@@ -108,16 +108,16 @@
                     <div class="card">
                     <div class="row g-20">
                         <div class="col-sm-3" id="username-display">
-                        <h5 id="username-text">Srishti Gupta</h5>
+                        <h5 class="username-text" id="username-post-1">Srishti Gupta</h5>
                         </div>
                         <div class="col-sm-9" id="postcard-color">
                         <span id="delete-icon" onclick="deletePostModal('post-1')"><i class="fa-solid fa-trash"></i></span>
-                        <a href="../html/post.html"><span id="ellipsis"><i class="fa-solid fa-ellipsis"></i></span></a>
+                        <a href="../html/post.html"><span id="ellipsis" onclick="getPostDetails('title-post-1', 'content-post-1', 'username-post-1')"><i class="fa-solid fa-ellipsis"></i></span></a>
                         <div class="card-body">
-                            <h6 class="card-title link-dark text-decoration-none" id="postcard-title">
+                            <h6 class="card-title link-dark text-decoration-none title-text-color" id="title-post-1">
                             ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
                             </h6>
-                            <p class="card-text">Since JavaScript does not have any type-checking, either of these keywords can be used to declare
+                            <p class="card-text" id="content-post-1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare
                                 a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, 
                                 they are different.</p>
                         </div>
@@ -133,16 +133,16 @@
                     <div class="card">
                     <div class="row g-20">
                         <div class="col-sm-3" id="username-display">
-                        <h5 id="username-text">Colby Fayock</h5>
+                        <h5 class="username-text" id="username-post-2">Colby Fayock</h5>
                         </div>
                         <div class="col-sm-9" id="postcard-color">
                         <span id="delete-icon" onclick="deletePostModal('post-2')"><i class="fa-solid fa-trash"></i></span>
-                        <a href="../html/post.html"><span id="ellipsis"><i class="fa-solid fa-ellipsis"></i></span></a>
+                        <a href="../html/post.html"><span id="ellipsis" onclick="getPostDetails('title-post-2', 'content-post-2', 'username-post-2')"><i class="fa-solid fa-ellipsis"></i></span></a>
                         <div class="card-body">
-                            <h6 class="card-title link-dark text-decoration-none" id="postcard-title">
+                            <h6 class="card-title link-dark text-decoration-none title-text-color" id="title-post-2">
                                 What is linting and how can it save you time?
                             </h6>
-                            <p class="card-text">One of the biggest challenges in software development is time. It’s something we can’t easily 
+                            <p class="card-text" id="content-post-2">One of the biggest challenges in software development is time. It’s something we can’t easily 
                                 get more of, but linting can help us make the most out of the time we have.</p>
                         </div>
                         </div>
@@ -157,16 +157,16 @@
                     <div class="card">
                     <div class="row g-20">
                         <div class="col-sm-3" id="username-display">
-                        <h5 id="username-text">Yazeed Bzadough</h5>
+                        <h5 class="username-text" id="username-post-3">Yazeed Bzadough</h5>
                         </div>
                         <div class="col-sm-9" id="postcard-color">
                         <span id="delete-icon" onclick="deletePostModal('post-3')"><i class="fa-solid fa-trash"></i></span>
-                        <a href="../html/post.html"><span id="ellipsis"><i class="fa-solid fa-ellipsis"></i></span></a>
+                        <a href="../html/post.html"><span id="ellipsis" onclick="getPostDetails('title-post-3', 'content-post-3', 'username-post-3')"><i class="fa-solid fa-ellipsis"></i></span></a>
                         <div class="card-body">
-                            <h6 class="card-title link-dark text-decoration-none" id="postcard-title">
+                            <h6 class="card-title link-dark text-decoration-none title-text-color" id="title-post-3">
                                 How to Get More Views on Your Tech Blog
                             </h6>
-                            <p class="card-text">If you're a developer with a Twitter account, you've already seen everyone and their cat start a 
+                            <p class="card-text" id="content-post-3">If you're a developer with a Twitter account, you've already seen everyone and their cat start a 
                                 blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the 
                                 industry.</p>
                         </div>
@@ -182,16 +182,16 @@
                     <div class="card">
                     <div class="row g-20">
                         <div class="col-sm-3" id="username-display">
-                        <h5 id="username-text">Cedd Burge</h5>
+                        <h5 class="username-text" id="username-post-4">Cedd Burge</h5>
                         </div>
                         <div class="col-sm-9" id="postcard-color">
                         <span id="delete-icon" onclick="deletePostModal('post-4')"><i class="fa-solid fa-trash"></i></span>
-                        <a href="../html/post.html"><span id="ellipsis"><i class="fa-solid fa-ellipsis"></i></span></a>
+                        <a href="../html/post.html"><span id="ellipsis" onclick="getPostDetails('title-post-4', 'content-post-4', 'username-post-4')"><i class="fa-solid fa-ellipsis"></i></span></a>
                         <div class="card-body">
-                            <h6 class="card-title link-dark text-decoration-none" id="postcard-title">
+                            <h6 class="card-title link-dark text-decoration-none title-text-color" id="title-post-4">
                                 How to write easily describable code
                             </h6>
-                            <p class="card-text">When code is not describable using words, most people have to do some mental mapping to turn it 
+                            <p class="card-text" id="content-post-4">When code is not describable using words, most people have to do some mental mapping to turn it 
                                 in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will 
                                 map to different words, which leads to confusion when discussing the code.</p>
                         </div>
@@ -207,16 +207,18 @@
                     <div class="card">
                     <div class="row g-20">
                         <div class="col-sm-3" id="username-display">
-                        <h5 id="username-text">Srishti Gupta</h5>
+                        <h5 class="username-text" id="username-post-5">Srishti Gupta</h5>
                         </div>
                         <div class="col-sm-9" id="postcard-color">
                         <span id="delete-icon" onclick="deletePostModal('post-5')"><i class="fa-solid fa-trash"></i></span>
-                        <a href="../html/post.html"><span id="ellipsis"><i class="fa-solid fa-ellipsis"></i></span></a>
+                        <a href="../html/post.html"><span id="ellipsis" onclick="getPostDetails('title-post-5', 'content-post-5', 'username-post-5')"><i class="fa-solid fa-ellipsis"></i></span></a>
                         <div class="card-body">
-                            <h6 class="card-title link-dark text-decoration-none" id="postcard-title">
-                                Everything you should know about ‘module’ & ‘require’ in Node.js
-                            </h6>
-                            <p class="card-text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
+                            <div id="post-title-container">
+                                <h6 class="card-title link-dark text-decoration-none title-text-color" id="title-post-5">
+                                    Everything you should know about ‘module’ & ‘require’ in Node.js
+                                </h6>
+                            </div>
+                            <p class="card-text" id="content-post-5">Node.js treats each JavaScript file as a separate module. For instance, if you have a file 
                                 containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can 
                                 say that you’ve created a module named xyz.</p>
                         </div>
@@ -247,6 +249,7 @@
     <!-- list of all posts ends here -->
     <script src="https://kit.fontawesome.com/befa429956.js" crossorigin="anonymous"></script>
     <script src="../scripts/postslist.js"></script>
+    <script src="../scripts/post.js"></script>
 </body>
 
 </html>
