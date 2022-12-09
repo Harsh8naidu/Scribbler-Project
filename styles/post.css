@@ -350,6 +350,12 @@
     bottom: 60px;
   }
 
+  #title-text {
+    outline-offset: 3px;
+    padding-left: 390px;
+    padding-right: 340px;
+  }
+
   #author-name {
     position: relative;
     left: 30px;
@@ -361,8 +367,8 @@
     font-family: 'IM Fell English SC', serif;
   }
 
-  #edit-btn-styling {
-    background-color: #F33A6A;
+  .edit-btn-styling {
+    background-color: #ed2553;
     border: 1px solid gray;
     width: 70px;
     padding: 5px;
@@ -372,6 +378,24 @@
     left: 1210px;
     bottom: 40px;
     cursor: pointer;
+  }
+
+  .save-btn-styling {
+    background-color: #ed2553;
+    border: 1px solid gray;
+    width: 70px;
+    padding: 5px;
+    height: 27px;
+    color: white;
+    position: relative;
+    left: 1210px;
+    bottom: 40px;
+    cursor: pointer;
+  }
+
+  .fa-save {
+    position: relative;
+    left: 7px;
   }
 
   .fa-edit {
@@ -391,8 +415,8 @@
     text-align: justify;
   }
 
-  #like-btn-styling {
-    background-color: #F33A6A;
+  .like-btn-styling {
+    background-color: #ed2553;
     border: 1px solid gray;
     width: 70px;
     padding: 5px;
@@ -402,6 +426,22 @@
     left: 30px;
     bottom: 95px;
     cursor: pointer;
+  }
+
+  #comment-styling {
+    position: relative;
+    left: 30px;
+    bottom: 80px;
+    margin-bottom: -30px;
+    margin-right: 400px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 20px solid #e2e4e6;
+    border-left: 10px solid #e2e4e6;
+    border-bottom: 20px solid #e2e4e6;
+    border-right: 10px solid #e2e4e6;
+    color: black;
   }
 
   .fa-thumbs-up {
@@ -420,7 +460,7 @@
     position: relative;
     left: 30px;
     bottom: 107px;
-    width: 800px;
+    width: 932px;
     height: 60px;
   }
 
@@ -429,16 +469,16 @@
     border: 2px solid lightblue;
   }
 
-  #comment-btn-styling {
-    background-color: #F33A6A;
+  .comment-btn-styling {
+    background-color: #ed2553;
     border: 1px solid gray;
     width: 70px;
     padding: 5px;
     height: 27px;
     color: white;
     position: relative;
-    right: 773px;
-    bottom: 82px;
+    right: 908px;
+    bottom: 78px;
     cursor: pointer;
   }
 

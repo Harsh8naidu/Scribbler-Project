@@ -101,7 +101,8 @@
     <div class="subheading-container">
         <div id="author-name">
             <p id="author-name-styling"></p>
-            <button id="edit-btn-styling">Edit<i class="fas fa-edit"></i></button>
+            <button class="edit-btn-styling" id="edit-btn">Edit<i class="fas fa-edit"></i></button>
+            <button class="save-btn-styling" id="save-btn">Save<i class="fas fa-save"></i></button>
         </div>
     </div>
 
@@ -109,15 +110,19 @@
         <p id="post-content"></p>
     </div>
 
-    <button id="like-btn-styling"><i class="fa-solid fa-thumbs-up"></i>Liked</button>
+    <button class="like-btn-styling" id="like-btn"><i class="fa-solid fa-thumbs-up"></i>Like</button>
+    <button class="like-btn-styling" id="liked-btn"><i class="fa-solid fa-thumbs-up"></i>Liked</button>
 
     <p id="like-counter">Be the first one to like this!</p>
 
-    <textarea id="comment-box" placeholder="Leave a comment..."></textarea>
-    <button id="comment-btn-styling">Comment</button>
+    <textarea id="comment-box" onchange="save()" placeholder="Leave a comment..."></textarea>
+    <button class="comment-btn-styling" id="comment-btn">Comment</button>
     
-    <div all-comments-container>
+    <div class="all-comments-container">
         <h4 id="all-comments-heading">All Comments</h4>
+        <div id="comments">
+
+        </div>
     </div>
 
     <script src="../scripts/post.js"></script>

@@ -55,10 +55,75 @@ function signInToSignUp(arg) {
 }
 
 //Post details: title, content, comments
-//Edit, Like, Comment
 var receivePostTitle = localStorage.getItem("title");
 var receivePostContent = localStorage.getItem("content");
 var receivePostUsername = localStorage.getItem("username");
 document.getElementById('title-text').innerHTML = receivePostTitle;
 document.getElementById('post-content').innerHTML = receivePostContent;
 document.getElementById('author-name-styling').innerHTML = receivePostUsername;
+
+//Edit button functionality
+var titleEditable = document.getElementById('title-text');
+var contentEditable = document.getElementById('post-content');
+var editButton = document.getElementById('edit-btn');
+var saveButton = document.getElementById('save-btn');
+saveButton.style.display = "none";
+
+editButton.onclick = function() {
+  titleEditable.setAttribute('contenteditable',true);
+  titleEditable.style.outline = "2px solid pink";
+
+  contentEditable.setAttribute('contenteditable', true);
+  contentEditable.style.outline = "2px solid pink";
+
+  editButton.style.display = "none";
+  saveButton.style.display = "block";
+
+}
+
+saveButton.onclick = function() {
+  titleEditable.setAttribute('contenteditable', false);
+  titleEditable.style.outline = "none";
+
+  contentEditable.setAttribute('contenteditable', false);
+  contentEditable.style.outline = "none";
+}
+
+//Like button functionality
+var likeCounter = 0;
+var likeButton = document.getElementById('like-btn');
+var likedButton = document.getElementById('liked-btn');
+var viewLikes = document.getElementById('like-counter');
+likedButton.style.display = "none";
+
+likeButton.onclick = function() {
+  likeButton.style.display = "none";
+  likedButton.style.display = "block";
+  likeCounter++;
+  viewLikes.innerHTML = likeCounter + " person likes this!";
+  viewLikes.style.color = "black";
+}
+
+likedButton.onclick = function() {
+  likeCounter++;
+  viewLikes.innerHTML = likeCounter + " person likes this!";
+  viewLikes.style.color = "black";
+}
+
+//Comment button functionality
+var commentId = 1;
+var postComment = document.getElementById('comments');
+postComment.style.display = "none";
+var commentButton = document.getElementById('comment-btn');
+var receiveComment = document.querySelector('#comment-box');
+
+
+function save() {
+  localStorage.setItem("comment", receiveComment.value);
+}
+
+commentButton.onclick = function() {
+  var getComment = localStorage.getItem("comment");
+  postComment.style.display = "block";
+  postComment.innerHTML += '<p id="comment-styling">'+getComment+'</p>';
+}
