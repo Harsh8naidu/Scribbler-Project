@@ -1,9 +1,15 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Header includes logo, signup and signin */
 .header-container {
     position: relative;
     bottom: 20px;
     right: 8px;
 }
 
+/* Logo */
 #logo{
     font-family: 'Montez', cursive;
     color: blue;
@@ -12,6 +18,7 @@
     margin-left: 10px;
 }
 
+/* Subheading */
 #subheading{
     font-family: 'Ubuntu Mono', monospace;
     position: relative;
@@ -50,6 +57,7 @@
     animation-duration: 0.4s;
   }
 
+  /* Sigin Modal */
   .modal-content-signin{
     position: relative;
     background-color: #fefefe;
@@ -76,7 +84,7 @@
     to {top:0; opacity:1}
   }
   
-  /* The Close Button */
+  /* Close Button for signin modal */
   .close {
     color: #000000;
     float: right;
@@ -91,6 +99,7 @@
     cursor: pointer;
   }
 
+  /* Close button for signin modal */
   .close-signIn {
     color: #000000;
     float: right;
@@ -105,6 +114,7 @@
     cursor: pointer;
   }
   
+  /* Modal Header */
   .modal-header {
     padding: 2px 16px;
     background-color: #fff;
@@ -112,18 +122,21 @@
     font-family: 'Lato', sans-serif;
   }
   
+  /* Modal body */
   .modal-body {
     padding: 2px 16px;
     position: relative;
     left: 60px;
     }
   
+  /* Modal footer */
   .modal-footer {
     padding: 2px 16px;
     background-color: #fff;
     color: white;
   }
   
+  /* Greyline to separate header and modal body */
   #greyline-modal{
     position: relative;
     left: 15px;
@@ -136,6 +149,7 @@
     box-sizing: border-box;
   }
   
+  /* Input fields */
   .custom-field {
     position: relative;
     font-size: 14px;
@@ -287,6 +301,7 @@
     margin-top: 7px;
   }
   
+  /* Signup button in signup modal */
   .signUp-btn {
     position: relative;
     top: 5px;
@@ -303,6 +318,7 @@
     background-color: green;
   }
 
+  /* Signup button in header */
   .signup-btn-primary{
     background-color: blue;
     color: white;
@@ -313,6 +329,7 @@
     cursor: pointer;
   }
 
+  /* Signin button in header */
   .signin-btn-primary{
     background-color: blue;
     color: white;
@@ -322,6 +339,7 @@
     cursor: pointer;
   }
 
+  /* Header buttons */
   #header-btn{
     display: flex;
     justify-content: flex-end;
@@ -329,6 +347,7 @@
     bottom: 80px;
   }
 
+  /* Signin Modal footer */
   #signIn-footer{
     position: relative;
     top: 10px;
@@ -336,13 +355,14 @@
 
   }
 
+  /* Move from signin to signup modal */
   .signin-to-signup{
     color: blue;
     cursor: pointer;
   }
+  /* Header (ENDS) - includes logo, signup and signin */
 
-  /*Posts details*/
-  
+  /* Posts details (STARTS) */
   #title-container {
     display: flex;
     justify-content: center;
@@ -350,12 +370,14 @@
     bottom: 60px;
   }
 
+  /* Title of the Post */
   #title-text {
     outline-offset: 3px;
     padding-left: 390px;
     padding-right: 340px;
   }
 
+  /* Username of the Author */
   #author-name {
     position: relative;
     left: 30px;
@@ -367,6 +389,7 @@
     font-family: 'IM Fell English SC', serif;
   }
 
+  /* EDIT Button */
   .edit-btn-styling {
     background-color: #ed2553;
     border: 1px solid gray;
@@ -380,6 +403,7 @@
     cursor: pointer;
   }
 
+  /* SAVE Button */
   .save-btn-styling {
     background-color: #ed2553;
     border: 1px solid gray;
@@ -398,12 +422,15 @@
     left: 7px;
   }
 
+
+  /* EDIT button */
   .fa-edit {
     position: relative;
     left: 7px;
     bottom: 1px;
   }
 
+  /* Content of the Post */
   .post-body {
     margin-left: 30px;
     margin-right: 40px;
@@ -415,6 +442,7 @@
     text-align: justify;
   }
 
+  /* LIKE button */
   .like-btn-styling {
     background-color: #ed2553;
     border: 1px solid gray;
@@ -428,6 +456,55 @@
     cursor: pointer;
   }
 
+  .fa-thumbs-up {
+    position: relative;
+    right: 4px;
+  }
+
+  /* Like counter message*/
+  #like-counter {
+    color: #aaa;
+    position: relative;
+    left: 30px;
+    bottom: 100px;
+  }
+
+  /* Comment Box */
+  #comment-box {
+    position: relative;
+    left: 30px;
+    bottom: 107px;
+    width: 932px;
+    height: 60px;
+  }
+
+  textarea:focus {
+    outline: none;
+    border: 2px solid lightblue;
+  }
+
+  /* COMMENT button */
+  .comment-btn-styling {
+    background-color: #ed2553;
+    border: 1px solid gray;
+    width: 70px;
+    padding: 5px;
+    height: 27px;
+    color: white;
+    position: relative;
+    right: 908px;
+    bottom: 78px;
+    cursor: pointer;
+  }
+
+  /* All Comments heading */
+  #all-comments-heading{
+    position: relative;
+    left: 30px;
+    bottom: 80px;
+  }
+
+  /* Comments */
   #comment-styling {
     position: relative;
     left: 30px;
@@ -443,48 +520,3 @@
     border-right: 10px solid #e2e4e6;
     color: black;
   }
-
-  .fa-thumbs-up {
-    position: relative;
-    right: 4px;
-  }
-
-  #like-counter {
-    color: #aaa;
-    position: relative;
-    left: 30px;
-    bottom: 100px;
-  }
-
-  #comment-box {
-    position: relative;
-    left: 30px;
-    bottom: 107px;
-    width: 932px;
-    height: 60px;
-  }
-
-  textarea:focus {
-    outline: none;
-    border: 2px solid lightblue;
-  }
-
-  .comment-btn-styling {
-    background-color: #ed2553;
-    border: 1px solid gray;
-    width: 70px;
-    padding: 5px;
-    height: 27px;
-    color: white;
-    position: relative;
-    right: 908px;
-    bottom: 78px;
-    cursor: pointer;
-  }
-
-  #all-comments-heading{
-    position: relative;
-    left: 30px;
-    bottom: 80px;
-  }
-  

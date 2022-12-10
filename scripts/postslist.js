@@ -1,73 +1,58 @@
-// Get the modal
+// functionality for signup modal
 var modalSignUp = document.getElementById("signup-Modal");
-
-// Get the button that opens the modal
 var btnSignUp = document.getElementById("signup-nav-btn");
-
-// Get the <span> element that closes the modal
 var spanCloseSignUp = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// display signup modal when signup button is clicked
 btnSignUp.onclick = function() {
   modalSignUp.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// close signup modal when close button is clicked
 spanCloseSignUp.onclick = function() {
   modalSignUp.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modalSignUp.style.display = "none";
-  }
-}
-
+// functionality for signin modal
 var modalSignIn = document.getElementById("signin-Modal");
-
-// Get the button that opens the modal
 var btnSignIn = document.getElementById("signin-nav-btn");
-
-// Get the <span> element that closes the modal
 var spanCloseSignIn = document.getElementsByClassName("close-signIn")[0];
 
-// When the user clicks the button, open the modal 
+// display signin modal when signin button is clicked
 btnSignIn.onclick = function() {
   modalSignIn.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// close signin modal when close button is clicked
 spanCloseSignIn.onclick = function() {
   modalSignIn.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modalSignIn.style.display = "none";
-  }
-}
-
+// move from signin to signup modal
 function signInToSignUp(arg) {
   document.getElementById("signin-Modal").style.display = "none";
   document.getElementById("signup-Modal").style.display = "block";
 }
+
+// Delete Modal
 var postId;
 function deletePostModal(postNumber) {
   document.getElementById("delete-Modal").style.display = "block";
   postId = postNumber;
 }
 
+// Yes button in delete modal 
 function deletePostYesBtn() {
   document.getElementById(postId).style.display = "none";
   document.getElementById("delete-Modal").style.display = "none";
 }
 
+// No button in delete modal
 function deletePostNoBtn() {
   document.getElementById("delete-Modal").style.display = "none";
 }
 
+// move to post details page to display post details
 function getPostDetails(individualPostTitle, individualPostContent, individualPostUsername) {
 
   var postTitle = document.getElementById(individualPostTitle).innerText;
@@ -79,5 +64,4 @@ function getPostDetails(individualPostTitle, individualPostContent, individualPo
   localStorage.setItem("username", postUsername);
 
   window.location.href = "index.html";
-
 }

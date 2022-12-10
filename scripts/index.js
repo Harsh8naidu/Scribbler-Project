@@ -1,63 +1,46 @@
-// Get the modal
+// signup modal functionality
 var modalSignUp = document.getElementById("signup-Modal");
-
-// Get the button that opens the modal
 var btnSignUp = document.getElementById("signup-nav-btn");
-
-// Get the <span> element that closes the modal
 var spanCloseSignUp = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// display signup modal when signup button is clicked
 btnSignUp.onclick = function() {
   modalSignUp.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// close signup modal when close button is clicked
 spanCloseSignUp.onclick = function() {
   modalSignUp.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modalSignUp.style.display = "none";
-  }
-}
-
+//signin modal functionality starts here
 var modalSignIn = document.getElementById("signin-Modal");
-
-// Get the button that opens the modal
 var btnSignIn = document.getElementById("signin-nav-btn");
-
-// Get the <span> element that closes the modal
 var spanCloseSignIn = document.getElementsByClassName("close-signIn")[0];
 
-// When the user clicks the button, open the modal 
+// display signin modal when signin button is clicked
 btnSignIn.onclick = function() {
   modalSignIn.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+ // close signin modal when close button is clicked
 spanCloseSignIn.onclick = function() {
   modalSignIn.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modalSignIn.style.display = "none";
-  }
-}
-
+//move from signin modal to signup modal
 function signInToSignUp(arg) {
   document.getElementById("signin-Modal").style.display = "none";
   document.getElementById("signup-Modal").style.display = "block";
 }
 
+// display create post modal when Create Post button is clicked
 function createPostDisplay() {
   document.getElementById("createpost-Modal").style.display = "block";
 }
 
+// close create post modal when close button is clicked
 function closePostDisplay() {
   document.getElementById("createpost-Modal").style.display = "none";
 }
+

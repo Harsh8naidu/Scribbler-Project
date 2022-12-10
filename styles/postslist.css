@@ -2,6 +2,9 @@ body{
     background-color: #ffeedd;
 }
 
+/* Header (STARTS) - logo, signup and signin buttons */
+
+/* Logo */
 #logo{
     font-family: 'Montez', cursive;
     color: blue;
@@ -12,6 +15,7 @@ body{
     font-weight: bold;
 }
 
+/* Subheading */
 #subheading{
     font-family: 'Ubuntu Mono', monospace;
     position: relative;
@@ -36,7 +40,7 @@ body{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content */
+  /* Modal Content for signup */
   .modal-content-signup{
     position: relative;
     background-color: #fefefe;
@@ -52,6 +56,7 @@ body{
     animation-duration: 0.4s;
   }
 
+  /* Modal Content for signin */
   .modal-content-signin{
     position: relative;
     background-color: #fefefe;
@@ -78,7 +83,7 @@ body{
     to {top:0; opacity:1}
   }
   
-  /* The Close Button */
+  /* Close Button for signup modal */
   .close {
     color: #000000;
     position: relative;
@@ -94,6 +99,7 @@ body{
     cursor: pointer;
   }
 
+  /* Close button for signin modal */
   .close-signIn {
     color: #000000;
     position: relative;
@@ -108,6 +114,7 @@ body{
     cursor: pointer;
   }
   
+  /* Modal Header */
   .modal-header {
     padding: 2px 16px;
     background-color: #fff;
@@ -115,18 +122,21 @@ body{
     font-family: 'Lato', sans-serif;
   }
 
+  /* Signup Modal Title */
   #signup-title {
     position: relative;
     right: 230px;
     top: 10px;
   }
   
+  /* Signin Modal Title*/
   #signin-title{
     position: relative;
     right: 180px;
     top: 10px;
   }
 
+  /* Modal body */
   .modal-body {
     padding: 2px 16px;
     position: relative;
@@ -134,12 +144,14 @@ body{
     left: 60px;
     }
   
+    /* Modal footer */
   .modal-footer {
     padding: 2px 16px;
     background-color: #fff;
     color: white;
   }
   
+  /* Greyline to separate header from modal body */
   #greyline-modal{
     position: relative;
     left: 15px;
@@ -152,6 +164,7 @@ body{
     box-sizing: border-box;
   }
   
+  /* Input fields */
   .custom-field {
     position: relative;
     font-size: 14px;
@@ -175,6 +188,7 @@ body{
     font-size: 14px;
   }
   
+  /* Placeholder for input fields */
   .custom-field .placeholder {
     position: absolute;
     left: var(--field-padding);
@@ -200,6 +214,7 @@ body{
     color: #222;
   }
   
+  /* Error message for input fields */
   .custom-field .error-message {
     width: 100%;
     display: flex;
@@ -303,6 +318,7 @@ body{
     margin-top: 7px;
   }
   
+  /* Signup button inside signup modal */
   .signUp-btn {
     position: relative;
     top: 5px;
@@ -319,6 +335,7 @@ body{
     background-color: green;
   }
 
+  /* Signup button in the header */
   .signup-btn-primary{
     background-color: blue;
     color: white;
@@ -330,6 +347,7 @@ body{
     margin-right: 8px;
   }
 
+  /* Signin button in the header */
   .signin-btn-primary{
     background-color: blue;
     color: white;
@@ -340,6 +358,7 @@ body{
     size: 20px;
   }
 
+  /* Header buttons */
   #header-btn{
     display: flex;
     justify-content: flex-end;
@@ -349,31 +368,35 @@ body{
     bottom: 59px;
   }
 
+  /* Footer for signin modal */
   #signIn-footer{
     position: relative;
     top: 10px;
     left: 45px;
 
   }
-
+  
   .signin-to-signup{
     color: blue;
     cursor: pointer;
   }
+  /* Header (ENDS) - logo, signup and signin buttons */
 
-  /* 
-    POSTCARD
-  */
+  /* POSTCARD (STARTS) */
+
+  /* Username container */
   #username-display {
     background-color: #fff;
     position: relative;
     right: 20px;
 }
 
+  /* PostCard color */
 #postcard-color {
     background-color: #E8E8E8;
 }
 
+  /* Color of the title */
 .title-text-color {
     color: #888D8D;
 }
@@ -382,14 +405,7 @@ body{
   color: #888D8D;
 }
 
-#delete-icon{
-  position: relative;
-  left: 400px;
-  top: 5px;
-  color: #818181;
-  cursor: pointer;
-}
-
+/* Three dots takes to post page */
 #ellipsis{
   position: relative;
   top: 140px;
@@ -397,14 +413,15 @@ body{
   color: #818181;
 }
 
+/* Card body */
 .card-body {
-    position: relative;
+  position: relative;
   bottom: 33px;
   right: 15px;
   width: 300px;
   }
 
-
+/* Username of the post */
 .username-text {
     position: relative;
   left: 20px;
@@ -412,6 +429,7 @@ body{
   color: #70747E;
 }
 
+/* Postcard container */
 .container{
   border: 1px solid gray;
   border-radius: 15px; 
@@ -420,12 +438,18 @@ body{
   height: 170px;
 }
 
+/* Content of the post */
 .card-text{
   font-size: 15px;
   font-family: 'PT Sans', sans-serif;
   width: 420px;
 }
 
+#hide-text {
+  opacity: 0.0;
+}
+
+/* All posts wrapper */
 .posts-wrapper {
   position: relative;
   right: 55px;
@@ -448,7 +472,291 @@ body{
   flex: 1;
   margin-top: 30px;
 }
+
+/* Mobile Responsive Posts (STARTS) */
+@media screen and (max-width: 768px) {
+  .posts-wrapper {
+    position: relative;
+    right: 55px;
+    bottom: 40px;
+    margin-left: 60px;
+    margin-right: 10px;
+  }
   
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 120%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin-top: 30px;
+  }
+
+  .card-title {
+    width: 400px;
+  }
+
+  .card-body {
+    position: relative;
+    bottom: 33px;
+    right: 15px;
+    width: 100px;
+    }
+    
+  /* Username of the post */
+  .username-text {
+      position: relative;
+    left: 20px;
+    top: 30px;
+    color: #70747E;
+  }
+  
+  .container{
+    position: relative;
+    right: 7px;
+    border: 1px solid gray;
+    border-radius: 15px; 
+    overflow: hidden;
+    width: 260px;
+    height: 150px;
+  }
+  
+  /* Content of the post */
+  .card-text{
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    width: 420px;
+  }
+  
+  #hide-text {
+    opacity: 0.0;
+    }
+  }
+
+  @media screen and (max-width: 1260px) {
+    .posts-wrapper {
+      position: relative;
+      bottom: 40px;
+      left: 140px;
+      margin-left: 60px;
+      margin-right: 480px;
+    }
+    
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width: 120%;
+    }
+    
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      margin-top: 30px;
+    }
+  
+    .card-title {
+      width: 400px;
+    }
+  
+    .card-body {
+      position: relative;
+      bottom: 33px;
+      right: 15px;
+      width: 100px;
+      }
+      
+    /* Username of the post */
+    .username-text {
+        position: relative;
+      left: 20px;
+      top: 30px;
+      color: #70747E;
+    }
+    
+    .container{
+      position: relative;
+      right: 7px;
+      border: 1px solid gray;
+      border-radius: 15px; 
+      overflow: hidden;
+      width: 260px;
+      height: 150px;
+    }
+    
+    /* Content of the post */
+    .card-text{
+      font-size: 15px;
+      font-family: 'PT Sans', sans-serif;
+      width: 420px;
+    }
+    
+    #hide-text {
+      opacity: 0.0;
+      }
+    }
+
+  @media screen and (max-width: 1030px) {
+    .posts-wrapper {
+      position: relative;
+      bottom: 40px;
+      left: 120px;
+      margin-left: 60px;
+      margin-right: 380px;
+    }
+    
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      width: 120%;
+    }
+    
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      margin-top: 30px;
+    }
+  
+    .card-title {
+      width: 400px;
+    }
+  
+    .card-body {
+      position: relative;
+      bottom: 33px;
+      right: 15px;
+      width: 100px;
+      }
+      
+    /* Username of the post */
+    .username-text {
+        position: relative;
+      left: 20px;
+      top: 30px;
+      color: #70747E;
+    }
+    
+    .container{
+      position: relative;
+      right: 7px;
+      border: 1px solid gray;
+      border-radius: 15px; 
+      overflow: hidden;
+      width: 250px;
+      height: 150px;
+    }
+    
+    /* Content of the post */
+    .card-text{
+      font-size: 15px;
+      font-family: 'PT Sans', sans-serif;
+      width: 420px;
+    }
+    
+    #hide-text {
+      opacity: 0.0;
+      }
+    }
+
+    @media (max-width: 913px) {
+      .posts-wrapper {
+        position: relative;
+        bottom: 40px;
+        left: -70px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .container{
+        position: relative;
+        right: 7px;
+        border: 1px solid gray;
+        border-radius: 15px; 
+        overflow: hidden;
+        width: 350px;
+        height: 150px;
+        background-color: #e8e8e8;
+      }
+    }
+
+  @media (max-width: 913px) {
+    .posts-wrapper {
+      position: relative;
+      bottom: 40px;
+      left: -40px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .container{
+      position: relative;
+      right: 7px;
+      border: 1px solid gray;
+      border-radius: 15px; 
+      overflow: hidden;
+      width: 270px;
+      height: 150px;
+      background-color: #e8e8e8;
+    }
+  }
+
+  @media (max-width: 687px) and (min-width: 500px) {
+    .posts-wrapper {
+      position: relative;
+      bottom: 40px;
+      left: -10px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .container{
+      position: relative;
+      right: 7px;
+      border: 1px solid gray;
+      border-radius: 15px; 
+      overflow: hidden;
+      width: 220px;
+      height: 150px;
+      background-color: #e8e8e8;
+    }
+
+    .card-body {
+      position: relative;
+      bottom: 33px;
+      right: 30px;
+      width: 50px;
+      }
+
+      .username-text {
+      position: relative;
+      left: 20px;
+      top: 6px;
+      color: #70747E;
+    }
+  }
+  /* Mobile responsive posts (ENDS) */
+
+/* DELETE ICON */
+#delete-icon{
+  position: relative;
+  left: 400px;
+  top: 5px;
+  color: #818181;
+  cursor: pointer;
+}
+
+/* Delete Modal */
 .modal-content-delete{
   position: relative;
   top: 100px;
@@ -465,6 +773,7 @@ body{
   animation-duration: 0.6s;
 }
 
+/* Delete Modal Animation */
 @-webkit-keyframes animatetop-delete {
   from {top:-300px; opacity:0} 
   to {top:100px; opacity:1}
@@ -475,6 +784,7 @@ body{
   to {top:100px; opacity:1}
 }
 
+/* Close button for delete modal */
 .close-delete {
   color: #000000;
   float: right;
@@ -489,6 +799,7 @@ body{
   cursor: pointer;
 }
 
+/* Yes button in delete modal */
 .delete-yes-btn {
   position: relative;
   top: 20px;
@@ -506,6 +817,7 @@ body{
   background-color: green;
 }
 
+/* No button in delete modal */
 .delete-no-btn {
   position: relative;
   top: 20px;
@@ -523,6 +835,7 @@ body{
   background-color: red;
 }
 
+/* Title of delete modal */
 #delete-ask {
   position: relative;
   top: 15px;

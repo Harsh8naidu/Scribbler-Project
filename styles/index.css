@@ -1,11 +1,11 @@
 body{
     position: relative;
-    
     margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
 
+/* Background Image - Full Screen*/
 .container {
   background: url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -14,6 +14,9 @@ body{
   margin-top: -20px;
 }
 
+/* Header includes logo, signup and sigin buttons*/
+
+/* Logo */
 #logo{
     font-family: 'Montez', cursive;
     color: blue;
@@ -22,6 +25,7 @@ body{
     margin-left: 10px;
 }
 
+/* Subheading */
 #subheading{
     font-family: 'Ubuntu Mono', monospace;
     position: relative;
@@ -44,7 +48,7 @@ body{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content */
+  /* Modal Content for signup */
   .modal-content-signup{
     position: relative;
     background-color: #fefefe;
@@ -60,6 +64,7 @@ body{
     animation-duration: 0.4s;
   }
 
+  /* Modal Content for signin */
   .modal-content-signin{
     position: relative;
     background-color: #fefefe;
@@ -86,7 +91,7 @@ body{
     to {top:0; opacity:1}
   }
   
-  /* The Close Button */
+  /* Close Button for signup modal*/
   .close {
     color: #000000;
     float: right;
@@ -101,6 +106,7 @@ body{
     cursor: pointer;
   }
 
+  /* Close Button for signin modal */
   .close-signIn {
     color: #000000;
     float: right;
@@ -115,6 +121,7 @@ body{
     cursor: pointer;
   }
   
+  /* Header of Modal */
   .modal-header {
     padding: 2px 16px;
     background-color: #fff;
@@ -122,18 +129,20 @@ body{
     font-family: 'Lato', sans-serif;
   }
   
+  /* Body of the modal */
   .modal-body {
     padding: 2px 16px;
     position: relative;
     left: 60px;
     }
   
+    /* Footer of the modal */
   .modal-footer {
     padding: 2px 16px;
     background-color: #fff;
     color: white;
   }
-  
+   /* Greyline separating */
   #greyline-modal{
     position: relative;
     left: 15px;
@@ -146,6 +155,7 @@ body{
     box-sizing: border-box;
   }
   
+  /* Input Fields */
   .custom-field {
     position: relative;
     font-size: 14px;
@@ -169,6 +179,7 @@ body{
     font-size: 14px;
   }
   
+  /* Input Fields Placeholder */
   .custom-field .placeholder {
     position: absolute;
     left: var(--field-padding);
@@ -194,6 +205,7 @@ body{
     color: #222;
   }
   
+  /* Input Fields Error Message */
   .custom-field .error-message {
     width: 100%;
     display: flex;
@@ -297,6 +309,7 @@ body{
     margin-top: 7px;
   }
   
+  /* Signup button on the Modal */
   .signUp-btn {
     position: relative;
     top: 5px;
@@ -313,6 +326,7 @@ body{
     background-color: green;
   }
 
+  /* Signup button in the header */
   .signup-btn-primary{
     background-color: blue;
     color: white;
@@ -323,6 +337,7 @@ body{
     cursor: pointer;
   }
 
+  /* Signin button in the header */
   .signin-btn-primary{
     background-color: blue;
     color: white;
@@ -332,6 +347,7 @@ body{
     cursor: pointer;
   }
 
+  /* Contains the Header button */
   #header-btn{
     display: flex;
     justify-content: flex-end;
@@ -341,6 +357,7 @@ body{
     bottom: 80px;
   }
 
+  /* Footer for Signin Modal */
   #signIn-footer{
     position: relative;
     top: 10px;
@@ -352,9 +369,10 @@ body{
     color: blue;
     cursor: pointer;
   }
+  /* Header (ENDS)*/
 
-  /*Posts button: All posts and create post */
 
+  /* Posts button includes All posts and create post buttons */
   #posts-btn{
     height: 50vh;
     display: flex;
@@ -362,6 +380,7 @@ body{
     align-items: center;
   }
 
+  /* All posts button */
   #all-posts{
     background-color: #f2bd0c;
     margin-right: 15px;
@@ -371,6 +390,7 @@ body{
     cursor: pointer;
   }
 
+  /* Create post button */
   #create-post{
     background-color: #f2bd0c;
     border: 2px solid #918989;
@@ -379,6 +399,7 @@ body{
     cursor: pointer;
   }
 
+  /* Create post Modal */
   .modal-content-createpost{
     position: relative;
     background-color: #fefefe;
@@ -394,6 +415,7 @@ body{
     animation-duration: 0.4s;
   }
 
+  /* Create Post Modal Close Button */
   .close-createpost {
     color: #000000;
     float: right;
@@ -408,6 +430,7 @@ body{
     cursor: pointer;
   }
 
+  /* Create Post Button */
   .createpost-btn {
     position: relative;
     top: 40px;
@@ -419,6 +442,7 @@ body{
     color: white;
   }
 
+  /* Modal Body for Create post */
   .modal-body-createpost {
     padding: 2px 16px;
     position: relative;
@@ -426,12 +450,14 @@ body{
     bottom: 20px;
     }
 
+    /* Title for Create post modal */
     #title-createpost {
       position: relative;
       top: 5px;
       width: 1170px;
     }
 
+    /* Content for Create post */
     #content-createpost {
       position: relative;
       top: 25px;
@@ -446,11 +472,13 @@ body{
       padding-top: 10px;
     }
 
+    /* Content Box to enter Content */
     #contents-box {
       position: relative;
       top: 20px;
     }
 
+    /* Greyline to separate Header from Content */
     #greyline-createpost {
       position: relative;
     left: 15px;

@@ -1,60 +1,40 @@
-// Get the modal
+// functionality of signup modal
 var modalSignUp = document.getElementById("signup-Modal");
-
-// Get the button that opens the modal
 var btnSignUp = document.getElementById("signup-nav-btn");
-
-// Get the <span> element that closes the modal
 var spanCloseSignUp = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// display signup modal when signup button is clicked
 btnSignUp.onclick = function() {
   modalSignUp.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// close signup modal when close button is clicked
 spanCloseSignUp.onclick = function() {
   modalSignUp.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modalSignUp.style.display = "none";
-  }
-}
-
+// functionality of signin modal
 var modalSignIn = document.getElementById("signin-Modal");
-
-// Get the button that opens the modal
 var btnSignIn = document.getElementById("signin-nav-btn");
-
-// Get the <span> element that closes the modal
 var spanCloseSignIn = document.getElementsByClassName("close-signIn")[0];
 
-// When the user clicks the button, open the modal 
+// display signin modal when signin button is clicked
 btnSignIn.onclick = function() {
   modalSignIn.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// close signin modal when close button is clicked
 spanCloseSignIn.onclick = function() {
   modalSignIn.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modalSignIn.style.display = "none";
-  }
-}
-
+// move from signin to signin modal
 function signInToSignUp(arg) {
   document.getElementById("signin-Modal").style.display = "none";
   document.getElementById("signup-Modal").style.display = "block";
 }
 
-//Post details: title, content, comments
+// Get Post details from Local Storage: title, content, username
 var receivePostTitle = localStorage.getItem("title");
 var receivePostContent = localStorage.getItem("content");
 var receivePostUsername = localStorage.getItem("username");
@@ -62,7 +42,7 @@ document.getElementById('title-text').innerHTML = receivePostTitle;
 document.getElementById('post-content').innerHTML = receivePostContent;
 document.getElementById('author-name-styling').innerHTML = receivePostUsername;
 
-//Edit button functionality
+// EDIT button functionality
 var titleEditable = document.getElementById('title-text');
 var contentEditable = document.getElementById('post-content');
 var editButton = document.getElementById('edit-btn');
@@ -81,6 +61,7 @@ editButton.onclick = function() {
 
 }
 
+// SAVE button functionality
 saveButton.onclick = function() {
   titleEditable.setAttribute('contenteditable', false);
   titleEditable.style.outline = "none";
@@ -89,7 +70,7 @@ saveButton.onclick = function() {
   contentEditable.style.outline = "none";
 }
 
-//Like button functionality
+// LIKE button functionality
 var likeCounter = 0;
 var likeButton = document.getElementById('like-btn');
 var likedButton = document.getElementById('liked-btn');
@@ -110,20 +91,21 @@ likedButton.onclick = function() {
   viewLikes.style.color = "black";
 }
 
-//Comment button functionality
+// COMMENT button functionality
 var commentId = 1;
 var postComment = document.getElementById('comments');
 postComment.style.display = "none";
 var commentButton = document.getElementById('comment-btn');
 var receiveComment = document.querySelector('#comment-box');
 
-
+// SAVE button functionality
 function save() {
   localStorage.setItem("comment", receiveComment.value);
 }
 
+// COMMENT button functionality
 commentButton.onclick = function() {
   var getComment = localStorage.getItem("comment");
   postComment.style.display = "block";
-  postComment.innerHTML += '<p id="comment-styling">'+getComment+'</p>';
+  postComment.innerHTML = '<p id="comment-styling">'+getComment+'</p>' + postComment.innerHTML;
 }

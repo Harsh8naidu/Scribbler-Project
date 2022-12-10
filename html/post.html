@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -9,19 +11,22 @@
     <title>post</title>
 </head>
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
+    <!-- Header contains logo, signup and signin buttons -->
     <div class="header-container">
 
         <div class="header">
 
+            <!-- Logo -->
             <div class="logo-container">
                 <h2 id="logo">ScriBBler</h2>
             </div>
 
+            <!-- Subheading -->
             <div id="subheading">
                 <h6>Explore, Imagine, Create</h6>
             </div>
 
+            <!-- Header buttons -->
             <div id="header-btn">
                 <button id="signup-nav-btn" class="signup-btn-primary">Sign Up</button>
                 <button id="signin-nav-btn" class="signin-btn-primary">Sign In</button>
@@ -31,13 +36,14 @@
 
         <div id="signup-Modal" class="modal">
 
-            <!-- Modal content -->
+            <!-- Modal content - signup -->
             <div class="modal-content-signup">
                 <div class="modal-header">
                 <span class="close">&times;</span>
                 <h2>Get Started</h2>
                 </div>
                 
+                <!-- Greyline to separate header and modal body -->
                 <div id="greyline-modal"></div>
                 
                 <div class="modal-body">
@@ -64,13 +70,14 @@
 
         <div id="signin-Modal" class="modal">
 
-            <!-- Modal content -->
+            <!-- Modal content - signin -->
             <div class="modal-content-signin">
                 <div class="modal-header">
                 <span class="close-signIn">&times;</span>
                 <h2>Welcome Back!</h2>
                 </div>
                 
+                <!-- Greyline to separate header and modal body -->
                 <div id="greyline-modal"></div>
                 
                 <div class="modal-body">
@@ -94,10 +101,12 @@
         </div>
     </div>
 
+    <!-- Title of the Post -->
     <div id="title-container">
         <h3 id="title-text"></h3>
     </div>
 
+    <!-- EDIT and SAVE buttons -->
     <div class="subheading-container">
         <div id="author-name">
             <p id="author-name-styling"></p>
@@ -106,18 +115,24 @@
         </div>
     </div>
 
+    <!-- Content of the Post -->
     <div class="post-body">
         <p id="post-content"></p>
     </div>
 
+    <!-- LIKE button -->
     <button class="like-btn-styling" id="like-btn"><i class="fa-solid fa-thumbs-up"></i>Like</button>
     <button class="like-btn-styling" id="liked-btn"><i class="fa-solid fa-thumbs-up"></i>Liked</button>
 
+    <!-- Like counter message -->
     <p id="like-counter">Be the first one to like this!</p>
 
+    <!-- Comment Box -->
     <textarea id="comment-box" onchange="save()" placeholder="Leave a comment..."></textarea>
+    <!-- Comment Button -->
     <button class="comment-btn-styling" id="comment-btn">Comment</button>
     
+    <!-- All Comments -->
     <div class="all-comments-container">
         <h4 id="all-comments-heading">All Comments</h4>
         <div id="comments">
@@ -125,7 +140,9 @@
         </div>
     </div>
 
+    <!-- js scripts -->
     <script src="../scripts/post.js"></script>
+    <!-- Font Awesome script -->
     <script src="https://kit.fontawesome.com/befa429956.js" crossorigin="anonymous"></script>
 </body>
 </html>
